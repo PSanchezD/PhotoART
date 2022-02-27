@@ -1,5 +1,5 @@
-App{
-    background-color: rgb(44, 44, 44);
+.App{
+    background-color: #212529;
 }
 
 .span1 {
@@ -11,8 +11,32 @@ App{
     font-family:'Noto Serif Display' ;
     color: #f7cb47;
     font-size: 30px;
-}
     
+}
+.unorderList{
+    display: flex; 
+    font-size:'Noto Serif Display';
+}
+.footerlist{
+    font-family:'Noto Serif Display';
+    font-size: 30px;
+    margin-left: 10rem;
+    color: #f7cb47;
+}
+.ending{
+    color: grey;
+}
+
+.text-p{
+    font-size: 20px;
+    font-family:'Noto Serif Display';
+    color: #f7cb47;
+    
+}
+.car-img{
+    width: 100%;
+    
+}
 
 
 

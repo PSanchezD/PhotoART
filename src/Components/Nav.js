@@ -1,12 +1,12 @@
 import React from "react";
 import { Navbar, NavItem, NavLink} from "react-bootstrap";
-import Camera from './camera.png'
+import Camera from '../image/camera.png'
 
 
 function Nav(){
     return(
         <div>
-            <Navbar bg="dark">
+            <Navbar bg="dark" className="sticky-top">
                 <img
                     src={Camera}
                     alt="camera"
