@@ -7,20 +7,21 @@ import { Card, Carousel,CarouselItem} from 'react-bootstrap'
 
 function Home(){
     return(
-        <>
-            <div className="container">
+        <div className="home-1">
+            <div className="container mt-5 pt-5">
                 <div className="row p-1 D-inline-block ">
                     <div className="col img1">
                         <img src={me} width={400} alt="me"></img>
                     </div>
                     <div className="col">
                         <p className="text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button className="btn btn-primary offset-4">Subscribe</button>
                     </div>
                 </div>
             </div>
             <hr/>
             <div className="container-fluid">
-                <Carousel autoplay>
+                <Carousel>
                     <CarouselItem>
                         <img className="car-img" src={land1} alt="cont"></img>
                         <Carousel.Caption className="col">
@@ -71,7 +72,7 @@ function Home(){
                  </div>
              </div>
              <hr/>
-        </>
+        </div>
     );
 }
 export default Home

@@ -5,15 +5,15 @@ import Camera from '../image/camera.png'
 
 function Nav(){
     return(
-        <div>
-            <Navbar bg="dark" className="sticky-top">
+        <div className="nav-1">
+            <Navbar bg="dark" className="fixed-top" >
                 <img
                     src={Camera}
                     alt="camera"
-                    width={150}
+                    width={120}
                 ></img>
-                <Navbar.Brand href="/" alignItem="center"> <span className="span1">PHOTOSHOT</span></Navbar.Brand>
-                    <NavItem className="offset-5">
+                <Navbar.Brand href="/"> <span className="span1">PHOTOSHOT</span></Navbar.Brand>
+                    <NavItem>
                         <NavLink><span className="spanlink">PORTRAIT</span></NavLink>
                     </NavItem>
                         <NavItem>

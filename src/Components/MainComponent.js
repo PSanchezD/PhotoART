@@ -14,6 +14,7 @@ class Main extends Component{
         return(
             <div>
                 <Nav/>
+                <hr/>
                 <HomePage/>
                 <Footer/>
             </div>
