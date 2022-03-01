@@ -12,7 +12,7 @@ function Nav(){
                     alt="camera"
                     width={120}
                 ></img>
-                <Navbar.Brand href="/"> <span className="span1">PHOTOSHOT</span></Navbar.Brand>
+                <Navbar.Brand href="/"> <span className="span1">PHOTO-ART</span></Navbar.Brand>
                     <NavItem>
                         <NavLink><span className="spanlink">PORTRAIT</span></NavLink>
                     </NavItem>

@@ -15,14 +15,13 @@
     font-size: 20px;
     
 }
-.unorderList{
-    display: flex; 
+.unorderList{ 
+    display: flex;
     font-size:'Noto Serif Display';
 }
 .footerlist{
     font-family:'Noto Serif Display';
     font-size: 30px;
-    
     color: #f7cb47;
 }
 .ending{
@@ -46,6 +45,10 @@
 
 .listlink{
     margin: 3rem;
+}
+.modal-img{
+    width: 200px;
+    height: 200px;
 }
 
 /*body { overflow-x: hidden; }*/
