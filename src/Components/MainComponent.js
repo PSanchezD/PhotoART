@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Nav from './Nav'
 import Footer from './Footer'
 import HomePage from './HomePage'
+import Portrait from './Portrait'
+
+
 
 
 class Main extends Component{
@@ -14,12 +17,12 @@ class Main extends Component{
         return(
             <div>
                 <Nav/>
-                <hr/>
                 <HomePage/>
+                <Portrait/>
                 <Footer/>
             </div>
-        );
-    }
+    )};
+
 }
 
 export default Main;
