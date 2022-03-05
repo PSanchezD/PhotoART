@@ -5,8 +5,7 @@ import Camera from '../image/camera.png'
 
 function Nav(){
     return(
-        <div className="nav-1">
-            <Navbar bg="dark" className="fixed-top" >
+            <Navbar className="fixed-top" bg="dark">
                 <img
                     src={Camera}
                     alt="camera"
@@ -23,7 +22,6 @@ function Nav(){
                         <NavLink><span className="spanlink">PRODUCT</span></NavLink>
                     </NavItem>
             </Navbar>
-        </div>
     );
 }
 export default Nav

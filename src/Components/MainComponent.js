@@ -3,6 +3,8 @@ import Nav from './Nav'
 import Footer from './Footer'
 import HomePage from './HomePage'
 import Portrait from './Portrait'
+import Land from './Landscape'
+import {BrowserRouter, Routes,Route} from 'react-router-dom'
 
 
 
@@ -15,12 +17,11 @@ class Main extends Component{
 
     render(){
         return(
-            <div>
-                <Nav/>
-                <HomePage/>
-                <Portrait/>
-                <Footer/>
-            </div>
+            <BrowserRouter>
+                    <Nav/>
+                    <HomePage/>
+                    <Footer/>
+            </BrowserRouter>
     )};
 
 }

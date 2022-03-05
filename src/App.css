@@ -1,7 +1,5 @@
 .App{
     background-color: #212529;
-    width: 100%;
-    height: auto;
 }
 
 .span1 {
@@ -46,9 +44,8 @@
 .listlink{
     margin: 3rem;
 }
-.modal-img{
-    width: 200px;
-    height: 200px;
-}
+
+
+
 
 /*body { overflow-x: hidden; }*/
