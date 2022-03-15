@@ -8,14 +8,14 @@ function Footer(){
     return (
         <div>
             <div className="row mx-0">
-                <div className="col-md-3"></div>
+                <div className="col-sm-3"></div>
                 <div className="col-md">
                     <ul className="unorderList">
                         <li className="listlink"><FacebookIcon sx={{fontSize: 80}} className="icon" href="/"/><span className="footerlist">Facebook</span></li>
                         <li className="listlink"><InstagramIcon sx={{fontSize: 80}} className="icon"/><span className="footerlist">Instagram</span></li>
                         <li className="listlink"><PinterestIcon sx={{fontSize: 80}} className="icon"/><span className="footerlist">Pintrest</span></li>
                     </ul>
-                    </div>
+                </div>
             </div>
             <div className="row mx-0">
                 <div className="col-md-5"></div>

@@ -4,7 +4,8 @@ import Footer from './Footer'
 import HomePage from './HomePage'
 import Portrait from './Portrait'
 import Land from './Landscape'
-import {BrowserRouter, Routes,Route} from 'react-router-dom'
+import Product from './Product'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 
@@ -19,7 +20,12 @@ class Main extends Component{
         return(
             <BrowserRouter>
                     <Nav/>
-                    <HomePage/>
+                    <Routes>
+                        <Route path="/HomePage" element={<HomePage/>}/>
+                        <Route path="/Portrait" element={<Portrait/>}/>
+                        <Route path="/Land" element={<Land/>}/>
+                        <Route path="/Product" element={<Product/>}/>
+                    </Routes>
                     <Footer/>
             </BrowserRouter>
     )};

@@ -47,5 +47,29 @@
 
 
 
+.nav-item{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contentPage{
+    height: 20px;
+    width: 10px;
+    padding-right: 200px;
+}
+
+.contentPart{
+    margin-bottom: 30px;
+}
+.contentWords{
+    font-family:'Noto Serif Display' ;
+    color: #f7cb47;
+    size: 40px;
+}
+.cut1{
+    background-color: #4b4b4b;
+}
+
+
 
 /*body { overflow-x: hidden; }*/
