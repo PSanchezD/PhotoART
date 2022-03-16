@@ -12,11 +12,7 @@ function Home(){
     const handleClose = () => setShow(false);
     const handleOpen =() => setShow(true)
 
-    function handlesub(){
-        setTimeout(() => {
-            alert('thank you ')
-        }, 2000);
-    }
+    
     
 
     return(
@@ -46,7 +42,7 @@ function Home(){
                                             <Form.Control type="name" placeholder="Name" />
                                         </Form.Group>
                                         <Form.Group>
-                                            <Button variant="warning" type="submit" onClick={handlesub} >Submit</Button>
+                                            <Button variant="warning" type="submit"  >Submit</Button>
                                         </Form.Group>
                                     </Form>
                                 </Modal.Body>
