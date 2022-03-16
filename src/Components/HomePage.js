@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import me from '../image/me.jpeg';
 import land1 from '../image/land1.jpeg';
-import man1 from '../image/man1.jpeg';
+import me3 from '../image/me3.jpeg';
 import pro from '../image/pro.jpeg';
 import { Button, Card, Carousel,CarouselItem, Form, Modal} from 'react-bootstrap'
 
@@ -11,6 +11,12 @@ function Home(){
 
     const handleClose = () => setShow(false);
     const handleOpen =() => setShow(true)
+
+    function handlesub(){
+        setTimeout(() => {
+            alert('thank you ')
+        }, 2000);
+    }
     
 
     return(
@@ -29,18 +35,18 @@ function Home(){
                                 <Modal.Body>
                                     <Form>
                                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                                            <Form.Label>Email address</Form.Label>
-                                            <Form.Control type="email" placeholder="Enter email" />
+                                            <Form.Label>email address</Form.Label>
+                                            <Form.Control type="email" placeholder="Email" />
                                             <Form.Text type="email" className="text-muted">
                                             We'll never share your email with anyone else.
                                             </Form.Text>
                                         </Form.Group>
                                         <Form.Group className="mb-3" controlId="formBasicPassword">
                                             <Form.Label>Your Name</Form.Label>
-                                            <Form.Control type="name" placeholder="name" />
+                                            <Form.Control type="name" placeholder="Name" />
                                         </Form.Group>
                                         <Form.Group>
-                                            <Button variant="warning" type="submit" >Submit</Button>
+                                            <Button variant="warning" type="submit" onClick={handlesub} >Submit</Button>
                                         </Form.Group>
                                     </Form>
                                 </Modal.Body>
@@ -59,7 +65,7 @@ function Home(){
                         </Carousel.Caption>
                     </CarouselItem>
                     <CarouselItem>
-                        <img className="car-img" src={man1} alt="cont"></img>
+                        <img className="car-img" src={me3} alt="cont"></img>
                         <Carousel.Caption className="col-sm">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </Carousel.Caption>
@@ -81,13 +87,18 @@ function Home(){
                      </div>
                      <div className="col">
                          <Card bg="dark">
-                             <Card.Img src={man1}></Card.Img>
+                             <Card.Img src={me3}></Card.Img>
                          </Card>
                      </div>
                      <div className="col">
                          <Card bg="dark">
                              <Card.Img src={pro}></Card.Img>
                          </Card>
+                     </div>
+                 </div>
+                 <div className="row pt-5">
+                     <div className="col-sm">
+                         <h1 className="span1">Top 3 picks of the week</h1>
                      </div>
                  </div>
              </div>

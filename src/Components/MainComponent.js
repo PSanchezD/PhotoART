@@ -25,6 +25,7 @@ class Main extends Component{
                         <Route path="/Portrait" element={<Portrait/>}/>
                         <Route path="/Land" element={<Land/>}/>
                         <Route path="/Product" element={<Product/>}/>
+                        <Route path="/" element={<HomePage/>}/>
                     </Routes>
                     <Footer/>
             </BrowserRouter>

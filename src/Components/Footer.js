@@ -8,12 +8,11 @@ function Footer(){
     return (
         <div>
             <div className="row mx-0">
-                <div className="col-sm-3"></div>
-                <div className="col-md">
+                <div className="col-sm-6">
                     <ul className="unorderList">
-                        <li className="listlink"><FacebookIcon sx={{fontSize: 80}} className="icon" href="/"/><span className="footerlist">Facebook</span></li>
-                        <li className="listlink"><InstagramIcon sx={{fontSize: 80}} className="icon"/><span className="footerlist">Instagram</span></li>
-                        <li className="listlink"><PinterestIcon sx={{fontSize: 80}} className="icon"/><span className="footerlist">Pintrest</span></li>
+                        <a href="https://www.facebook.com/" target='_blank'><li className="listlink"><FacebookIcon sx={{fontSize: 50}} className="icon" href="https://www.facebook.com/"/></li></a>
+                        <a href="https://www.instagram.com/?hl=en" target='_blank'><li className="listlink"><InstagramIcon sx={{fontSize: 50}} className="icon"/></li></a>
+                        <a href="https://www.pinterest.com/" target='_blank'><li className="listlink"><PinterestIcon sx={{fontSize: 50}} className="icon"/></li></a>
                     </ul>
                 </div>
             </div>

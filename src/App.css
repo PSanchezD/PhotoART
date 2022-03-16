@@ -13,10 +13,11 @@
     font-size: 20px;
     
 }
-.unorderList{ 
+
+.unorderList{
     display: flex;
-    font-size:'Noto Serif Display';
 }
+
 .footerlist{
     font-family:'Noto Serif Display';
     font-size: 30px;
@@ -62,14 +63,26 @@
     margin-bottom: 30px;
 }
 .contentWords{
+    margin-left: 250px;
     font-family:'Noto Serif Display' ;
     color: #f7cb47;
     size: 40px;
 }
-.cut1{
-    background-color: #4b4b4b;
+
+
+.contentimg{
+    width:  150px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.footlogo{
+    color: #f7cb47;
+    vertical-align: middle;
+    align-items: center;
+    align-self: center;
+    padding-top: 5px;
 }
 
 
 
-/*body { overflow-x: hidden; }*/
