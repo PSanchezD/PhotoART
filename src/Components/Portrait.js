@@ -26,12 +26,12 @@ function Portrait(){
                 <div className='row'>
                     <div className='col-md-4'>
                         <Card className='contentPart'>
-                            <a href={me}><Card.Img className='contentimg' src={me} alt="img"></Card.Img></a>
+                            <Card.Img className='contentimg' src={me} alt="img"></Card.Img>
                         </Card>
                     </div>
                     <div className='col-md-4'>
                         <Card className='contentPart'>
-                            <a href={me}><Card.Img className='contentimg' src={me2} alt="img"></Card.Img></a>
+                            <Card.Img className='contentimg' src={me2} alt="img"></Card.Img>
                         </Card>
                     </div>
                     <div className='col-md-4'>

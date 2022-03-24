@@ -19,30 +19,30 @@ function Home(){
         <div className="home-1">
             <div className="container mt-5 pt-5">
                 <div className="row p-1 D-inline-block ">
-                    <div className="col img1">
-                        <img src={me} width={400} alt="me"></img>
+                    <div className="col-sm img1">
+                        <img  className="homeimg" width={350} src={me} alt="me"></img>
                     </div>
                     <div className="col">
                         <p className="text-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         <button onClick={handleOpen} className="btn btn-primary offset-4">Subscribe</button>
                         <Modal show={show} onHide={handleClose}>
                             <Modal.Header closeButton={handleClose}>
-                                <Modal.Title color="success">Subscribe to get the latest in Photography</Modal.Title>
+                                <Modal.Title color="success">Subscribe for more photography!</Modal.Title>
                                 <Modal.Body>
                                     <Form>
                                         <Form.Group className="mb-3" controlId="formBasicEmail">
-                                            <Form.Label>email address</Form.Label>
+                                            <Form.Label>Email</Form.Label>
                                             <Form.Control type="email" placeholder="Email" />
                                             <Form.Text type="email" className="text-muted">
                                             We'll never share your email with anyone else.
                                             </Form.Text>
                                         </Form.Group>
                                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                                            <Form.Label>Your Name</Form.Label>
+                                            <Form.Label>Name</Form.Label>
                                             <Form.Control type="name" placeholder="Name" />
                                         </Form.Group>
                                         <Form.Group>
-                                            <Button variant="warning" type="submit"  >Submit</Button>
+                                            <Button variant="warning" type="submit">Submit</Button>
                                         </Form.Group>
                                     </Form>
                                 </Modal.Body>
