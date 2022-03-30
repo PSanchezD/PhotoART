@@ -1,14 +1,5 @@
 import React from 'react'
-import { Card } from 'react-bootstrap';
-import me from '../image/me.jpeg'
-import me2 from '../image/me2.jpeg'
-import me3 from '../image/me3.jpeg'
-import me4 from '../image/me4.jpeg'
-import me5 from '../image/me5.png'
-import me6 from '../image/me6.jpeg'
-import me7 from '../image/me7.jpeg'
-import me8 from '../image/me8.jpeg'
-import me9 from '../image/me9.jpeg'
+import {Infopor} from '../Asset/info-por'
 
 function Portrait(){
     return (
@@ -22,58 +13,13 @@ function Portrait(){
                 </div>
             </div>
             <hr/>
-            <div className='container'>
-                <div className='row'>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me2} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me3} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me4} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me5} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me6} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me7} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me8} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                    <div className='col-md-4'>
-                        <Card className='contentPart'>
-                            <Card.Img className='contentimg' src={me9} alt="img"></Card.Img>
-                        </Card>
-                    </div>
-                </div>
+            <div className='group-pic'>
+                {Infopor.map((item) => {
+                        return(
+                            <img className='landpic rounded-3' src={item.url} alt="land"/>
+                        )
+                    })
+                }
             </div>
         </>
     );

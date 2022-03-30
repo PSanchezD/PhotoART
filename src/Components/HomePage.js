@@ -5,12 +5,17 @@ import me3 from '../image/me3.jpeg';
 import pro from '../image/pro.jpeg';
 import { Button, Card, Carousel,CarouselItem, Form, Modal} from 'react-bootstrap'
 
-function Home(){
+ function Home(){
 
     const [show,setShow]=useState(false)
 
     const handleClose = () => setShow(false);
-    const handleOpen =() => setShow(true)
+    const handleOpen =() => setShow(true);
+
+        function handleSubmit(e) {
+          e.preventDefault();
+          alert('Thank you for subscribing.');
+        }
 
     
     
@@ -29,20 +34,20 @@ function Home(){
                             <Modal.Header closeButton={handleClose}>
                                 <Modal.Title color="success">Subscribe for more photography!</Modal.Title>
                                 <Modal.Body>
-                                    <Form>
+                                    <Form onSubmit={handleSubmit}>
                                         <Form.Group className="mb-3" controlId="formBasicEmail">
                                             <Form.Label>Email</Form.Label>
-                                            <Form.Control type="email" placeholder="Email" />
+                                            <Form.Control required type="email" placeholder="Email" />
                                             <Form.Text type="email" className="text-muted">
                                             We'll never share your email with anyone else.
                                             </Form.Text>
                                         </Form.Group>
                                         <Form.Group className="mb-3" controlId="formBasicPassword">
                                             <Form.Label>Name</Form.Label>
-                                            <Form.Control type="name" placeholder="Name" />
+                                            <Form.Control required type="name" placeholder="Name" />
                                         </Form.Group>
                                         <Form.Group>
-                                            <Button variant="warning" type="submit">Submit</Button>
+                                            <Button variant="warning" type="submit" >Submit</Button>
                                         </Form.Group>
                                     </Form>
                                 </Modal.Body>
@@ -102,4 +107,4 @@ function Home(){
         </div>
     );
 }
-export default Home
+export default Home;

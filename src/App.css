@@ -92,5 +92,22 @@
     margin-bottom: 0rem;
 }
 
+.group-pic{
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    justify-content: center;
+}
+
+.landpic{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    margin: 30px;
+    padding-right: 30px;
+    
+}
+
+
+
 
 
