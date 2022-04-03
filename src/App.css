@@ -107,7 +107,39 @@
     
 }
 
-
+@media all and (max-width: 480px) {
+    .group-pic{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .landpic{
+        width: 350px;
+        height: 350px;
+        margin: 0px;
+        margin-top: 20px;
+        align-self: center;
+        padding: 0px;
+        object-fit: cover;
+    }
+}
+@media  all and (min-width:480px) and (max-width: 1600px) {
+    .group-pic{
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        justify-content: center;
+        
+    }
+    .landpic{
+        width: 250px;
+        height: 250px;
+        margin: 0px;
+        margin-top: 20px;
+        align-self: center;
+        padding: 0px;
+        object-fit: cover;
+    }
+}
 
 
 
