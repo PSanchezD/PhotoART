@@ -16,6 +16,14 @@
     
 }
 
+.unorderList{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 .footerlist{
     font-family:'Noto Serif Display';
@@ -96,15 +104,27 @@
     display: grid;
     grid-template-columns: repeat(3,500px);
     justify-content: center;
+    
 }
 
 .landpic{
     width: 500px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     margin: 30px;
     padding-right: 30px;
-    
+}
+
+.group-upload{
+    display: flex;
+    justify-content: center;
+}
+
+.add{
+    background-color:#f7cb47;
+    margin-right: 40px;
+    border: none;
+    border-radius: 20px;
 }
 
 @media all and (max-width: 480px) {
@@ -121,6 +141,24 @@
         align-self: center;
         padding: 0px;
         object-fit: cover;
+    }
+    .unorderList{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+       
+    }
+    .add{
+        width: 100%;
+    }
+    .qweasd{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
     }
 }
 @media  all and (min-width:480px) and (max-width: 1600px) {

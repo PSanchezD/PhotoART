@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import Nav from './Nav'
-import Footer from './Footer'
-import HomePage from './HomePage'
-import Portrait from './Portrait'
-import Land from './Landscape'
-import Product from './Product'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Nav from './Nav';
+import Footer from './Footer';
+import HomePage from './HomePage';
+import Portrait from './Portrait';
+import Land from './Landscape';
+import Product from './Product';
+import Post from './post';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 
@@ -25,6 +26,7 @@ class Main extends Component{
                         <Route path="/Portrait" element={<Portrait/>}/>
                         <Route path="/Land" element={<Land/>}/>
                         <Route path="/Product" element={<Product/>}/>
+                        <Route path="/POST" element={<Post/>}/>
                         <Route path="/" element={<HomePage/>}/>
                     </Routes>
                     <Footer/>
