@@ -8,15 +8,18 @@ function Post(){
 
     const [file,setFile]=useState(null);
     const [image,setImage]=useState([]);
+    const [loading,setloading]=useState(false)
 
     
     const imageRef = ref(storage,'image/');
 
     const handleUpload = () => {
+        setloading(true)
         const storageRef = ref(storage, `image/${file.name}`);
             uploadBytes(storageRef,file).then(()=>{
             loadingImage()
-            alert("uploading")
+            setloading(false)
+
         })
     };
 
@@ -55,7 +58,7 @@ function Post(){
                 <input className='add' type="file" onChange={(e)=>{
                     setFile(e.target.files[0])
                 }} />
-                <button className='add' onClick={handleUpload}>Upload</button>
+                <button className='add' onClick={handleUpload}>{loading?"uploading":"upload"}</button>
             </div>
             <div className='group-pic'>
                 {image.map((item) => {
