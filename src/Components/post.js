@@ -1,5 +1,5 @@
 
-import { uploadBytes, ref, listAll, getDownloadURL } from 'firebase/storage'
+import { uploadBytes, ref, listAll, getDownloadURL,deleteObject } from 'firebase/storage'
 import { useEffect, useState } from 'react'
 import {storage} from '../firebase-component/firebase'
 
@@ -9,9 +9,10 @@ function Post(){
     const [file,setFile]=useState(null);
     const [image,setImage]=useState([]);
     const [loading,setloading]=useState(false)
+    const [deleted,setDeleted]=useState(false)
 
     
-    const imageRef = ref(storage,'image/');
+    const imageRef = ref(storage,'image/[1]');
 
     const handleUpload = () => {
         setloading(true)
@@ -41,8 +42,20 @@ function Post(){
     
 
     useEffect(()=>{
-       loadingImage()
+        loadingImage()
     },[]);
+
+
+    const handleDelete = () =>{
+        setDeleted(false)
+        const desertRef =ref(storage, `image/${file.name}`)
+        deleteObject(desertRef).then((req)=>{
+            alert("deleted")
+        }).catch((err)=>{
+            alert("err:"+ err)
+        });
+        setDeleted(true)
+    }
 
     return(
         <>
@@ -59,11 +72,14 @@ function Post(){
                     setFile(e.target.files[0])
                 }} />
                 <button className='add' onClick={handleUpload}>{loading?"uploading":"upload"}</button>
+                <button className='add' onClick={handleDelete}>{deleted?"deleting":"delete"}</button>
             </div>
             <div className='group-pic'>
                 {image.map((item) => {
                         return(
-                            <img className='landpic rounded-3' src={item} alt="img"/>
+                            <>
+                                <img className='landpic rounded-3' src={item} alt="img"/>
+                            </>
                         )
                     })
                 }
