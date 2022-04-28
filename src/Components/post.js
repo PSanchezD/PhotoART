@@ -50,8 +50,8 @@ function Post(){
         const desertRef =ref(storage, `image/${file.name}`)
         deleteObject(desertRef).then((req)=>{
             alert("Image deleted please refresh the page.");
-        }).catch((err)=>{
-            alert("err:"+ err)
+        }).catch(()=>{
+            alert("Error refresh the page!")
         });
         setDeleted(false);
     }
